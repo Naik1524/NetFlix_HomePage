@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    
+    <title>Netflix India - Watch TV Shows, Movies Online</title>
+
+    <link rel="shortcut icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico" />
+    <link rel = "stylesheet" href = "./style.css" defer/>
+</head>
+<body>
+    <header>
+        <div>
+            <a href="/" class="logo">
+                <svg viewBox="0 0 111 30" data-uia="netflix-logo" class="svg-icon svg-icon-netflix-logo" aria-hidden="true" focusable="false"><g id="netflix-logo">
+                    <path d="M105.06233,14.2806261 L110.999156,30 C109.249227,29.7497422 107.500234,29.4366857 105.718437,29.1554972 L102.374168,20.4686475 L98.9371075,28.4375293 C97.2499766,28.1563408 95.5928391,28.061674 93.9057081,27.8432843 L99.9372012,14.0931671 L94.4680851,-5.68434189e-14 L99.5313525,-5.68434189e-14 L102.593495,7.87421502 L105.874965,-5.68434189e-14 L110.999156,-5.68434189e-14 L105.06233,14.2806261 Z M90.4686475,-5.68434189e-14 L85.8749649,-5.68434189e-14 L85.8749649,27.2499766 C87.3746368,27.3437061 88.9371075,27.4055675 90.4686475,27.5930265 L90.4686475,-5.68434189e-14 Z M81.9055207,26.93692 C77.7186241,26.6557316 73.5307901,26.4064111 69.250164,26.3117443 L69.250164,-5.68434189e-14 L73.9366389,-5.68434189e-14 L73.9366389,21.8745899 C76.6248008,21.9373887 79.3120255,22.1557784 81.9055207,22.2804387 L81.9055207,26.93692 Z M64.2496954,10.6561065 L64.2496954,15.3435186 L57.8442216,15.3435186 L57.8442216,25.9996251 L53.2186709,25.9996251 L53.2186709,-5.68434189e-14 L66.3436123,-5.68434189e-14 L66.3436123,4.68741213 L57.8442216,4.68741213 L57.8442216,10.6561065 L64.2496954,10.6561065 Z M45.3435186,4.68741213 L45.3435186,26.2498828 C43.7810479,26.2498828 42.1876465,26.2498828 40.6561065,26.3117443 L40.6561065,4.68741213 L35.8121661,4.68741213 L35.8121661,-5.68434189e-14 L50.2183897,-5.68434189e-14 L50.2183897,4.68741213 L45.3435186,4.68741213 Z M30.749836,15.5928391 C28.687787,15.5928391 26.2498828,15.5928391 24.4999531,15.6875059 L24.4999531,22.6562939 C27.2499766,22.4678976 30,22.2495079 32.7809542,22.1557784 L32.7809542,26.6557316 L19.812541,27.6876933 L19.812541,-5.68434189e-14 L32.7809542,-5.68434189e-14 L32.7809542,4.68741213 L24.4999531,4.68741213 L24.4999531,10.9991564 C26.3126816,10.9991564 29.0936358,10.9054269 30.749836,10.9054269 L30.749836,15.5928391 Z M4.78114163,12.9684132 L4.78114163,29.3429562 C3.09401069,29.5313525 1.59340144,29.7497422 0,30 L0,-5.68434189e-14 L4.4690224,-5.68434189e-14 L10.562377,17.0315868 L10.562377,-5.68434189e-14 L15.2497891,-5.68434189e-14 L15.2497891,28.061674 C13.5935889,28.3437998 11.906458,28.4375293 10.1246602,28.6868498 L4.78114163,12.9684132 Z" id="Fill-14">
+                    </path></g>
+                </svg>
+            </a>
+            
+        </div>
+        <div>
+            <div class="select">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-globe" viewBox="0 0 16 16">
+                    <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"></path></svg>
+
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" />
+                  </svg> -->
+                  <select> 
+                    <option value="">English</option>
+                    <option value="">हिन्दी</option>
+                </select>
+            </div>
+            <a class = "button" href="/">Sign In</a>
+                    
+        </div>
+    </header>
+    <div class="splash cta">
+        <div class="background">
+            <img src="https://assets.nflxext.com/ffe/siteui/vlv3/79fe83d4-7ef6-4181-9439-46db72599559/bd05b4ed-7e37-4be9-85c8-078f067bd150/IN-en-20221017-popsignuptwoweeks-perspective_alpha_website_small.jpg" srcset="https://assets.nflxext.com/ffe/siteui/vlv3/79fe83d4-7ef6-4181-9439-46db72599559/bd05b4ed-7e37-4be9-85c8-078f067bd150/IN-en-20221017-popsignuptwoweeks-perspective_alpha_website_small.jpg 1000w, https://assets.nflxext.com/ffe/siteui/vlv3/79fe83d4-7ef6-4181-9439-46db72599559/bd05b4ed-7e37-4be9-85c8-078f067bd150/IN-en-20221017-popsignuptwoweeks-perspective_alpha_website_medium.jpg 1500w, https://assets.nflxext.com/ffe/siteui/vlv3/79fe83d4-7ef6-4181-9439-46db72599559/bd05b4ed-7e37-4be9-85c8-078f067bd150/IN-en-20221017-popsignuptwoweeks-perspective_alpha_website_large.jpg 1800w" alt="">
+            <div class="gradient"></div>
+        </div>
+        <div class="content">
+            <div>
+                <h1>Unlimited movies, TV shows and more.</h1>
+                <h2>Watch anywhere. Cancel anytime.</h2>
+                <h3>Ready to watch? Enter your email to create or restart your membership</h3>
+                <form>
+                    <div>
+                        <input type="email">
+                        <span>Email Address</span>
+                    </div>
+                    <div>
+                        <button>Get Started &gt;</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <section>
+        <div class="texts">
+            <h1> Enjoy on your TV.</h1>
+            <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
+            </div>
+            <div class="media s1">
+                <div>
+                    <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" alt="">
+                    <video data-uia="our-story-card-video" autoplay="" playsinline="" muted="" loop=""><source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-in-0819.m4v" type="video/mp4"></video>
+                </div>
+        </div>
+    </section>
+    <section>
+        <div class="texts">
+            <h1> Download your shows to watch offline.</h1>
+            <p>Save your favourites easily and always have something to watch.</p>
+        </div>
+        <div class="media">
+            <img alt="" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg" data-uia="our-story-card-img">
+            <div class="download">
+                <img class="cover" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/boxshot.png" alt="">
+                <span>Downloading...</span>
+                <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif" alt="">
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="texts">
+            <h1> Watch everywhere.</h1>
+            <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+            </div>
+            <div class="media s3">
+                <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile-in.png" alt="">
+                <video class="our-story-card-video" data-uia="our-story-card-video" autoplay="" playsinline="" muted="" loop=""><source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices-in.m4v" type="video/mp4"></video>
+            </div>
+    </section>
+    <section class="last">
+        <div class="texts">
+            <h1> Create profiles for children.</h1>
+            <p>Send children on adventures with their favourite characters in a space made just for them—free with your membership.</p>
+            </div>
+            <div class="media">
+                <img src="https://occ-0-3082-2164.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABYjXrxZKtrzxQRVQNn2aIByoomnlbXmJ-uBy7du8a5Si3xqIsgerTlwJZG1vMpqer2kvcILy0UJQnjfRUQ5cEr7gQlYqXfxUg7bz.png?r=420" alt="">
+            </div>
+    </section>
+    <div class="faq cta">
+        <h1>Frequently Asked Questions</h1>
+        <div class="questions">
+
+            <div class="question">
+                <input type="checkbox" id="q1" >
+                <label class="header" for="q1">
+                    What is Netflix?
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                      </svg>                      
+                </label>
+                <div class="answer">
+                    Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more – on thousands of internet-connected devices.
+                    <br>
+                    <br>
+                    You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price. There's always something new to discover, and new TV shows and movies are added every week!
+                </div>
+            </div>
+
+            <div class="question">
+                <input type="checkbox" id="q2" >
+                <label class="header" for="q2">
+                    How much does Netflix Cost?
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                      </svg>                      
+                </label>
+                <div class="answer">
+                    Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from ₹ 149 to ₹ 649 a month. No extra costs, no contracts.
+                </div>
+            </div>
+
+            <div class="question">
+                <input type="checkbox" id="q3" >
+                <label class="header" for="q3">
+                    Where can I watch?
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                      </svg>                      
+                </label>
+                <div class="answer">
+                    Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.
+                    <br>
+                    <br>
+                    You can also download your favourite shows with the iOS, Android, or Windows 10 app. Use downloads to watch while you're on the go and without an internet connection. Take Netflix with you anywhere.
+                </div>
+            </div>
+
+            <div class="question">
+                <input type="checkbox" id="q4" >
+                <label class="header" for="q4">
+                    How do I Cancel?
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                      </svg>                      
+                </label>
+                <div class="answer">
+                    Netflix is flexible. There are no annoying contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime.
+                </div>
+            </div>
+
+            <div class="question">
+                <input type="checkbox" id="q5" >
+                <label class="header" for="q5">
+                    What can I watch on Netflix?
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                      </svg>                      
+                </label>
+                <div class="answer">
+                    Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.
+                </div>
+            </div>
+
+            <div class="question">
+                <input type="checkbox" id="q6" >
+                <label class="header" for="q6">
+                    Is Netflix good for kids?
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                      </svg>                      
+                </label>
+                <div class="answer">
+                    The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and films in their own space.
+                    <br>
+                    <br>
+                    Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don’t want kids to see.
+                </div>
+            </div>
+        </div>
+
+        <h5>Ready to watch? Enter your email to create or restart your membership.</h5>
+
+        <form>
+            <div>
+                <input type="email">
+                <span>Email Address</span>
+            </div>
+            <div>
+                <button>Get Started &gt;</button>
+            </div>
+        </form>
+    </div>
+
+    <section>
+        <div class="site-footer">
+            <p class="footer-top">
+                Questions? Call 
+                <a class="footer-top-a" href="tel:000-800-040-1843">000-800-040-1843</a>
+            </p>
+            <ul class="footer-links structural">
+                <li class="footer-link-item" placeholder="footer_responsive_link_faq_item">
+                    <a class="footer-link" data-uia="footer-link" href="https://help.netflix.com/support/412" placeholder="footer_responsive_link_faq">
+                        <span id="" data-uia="data-uia-footer-label">FAQ</span>
+                    </a>
+                </li>
+                <li class="footer-link-item" placeholder="footer_responsive_link_help_item">
+                    <a class="footer-link" data-uia="footer-link" href="https://help.netflix.com" placeholder="footer_responsive_link_help">
+                        <span id="" data-uia="data-uia-footer-label">Help Centre</span>
+                    </a>
+                </li>
+                <li class="footer-link-item" placeholder="footer_responsive_link_account_item">
+                    <a class="footer-link" data-uia="footer-link" href="/youraccount" placeholder="footer_responsive_link_account">
+                        <span id="" data-uia="data-uia-footer-label">Account</span>
+                    </a>
+                </li>
+                <li class="footer-link-item" placeholder="footer_responsive_link_media_center_item">
+                    <a class="footer-link" data-uia="footer-link" href="https://media.netflix.com/" placeholder="footer_responsive_link_media_center">
+                        <span id="" data-uia="data-uia-footer-label">Media Centre</span>
+                    </a>
+                </li>
+                <li class="footer-link-item" placeholder="footer_responsive_link_relations_item">
+                    <a class="footer-link" data-uia="footer-link" href="http://ir.netflix.com/" placeholder="footer_responsive_link_relations">
+                        <span id="" data-uia="data-uia-footer-label">Investor Relations</span>
+                        </a>
+                </li>
+                <li class="footer-link-item" placeholder="footer_responsive_link_jobs_item">
+                    <a class="footer-link" data-uia="footer-link" href="https://jobs.netflix.com/jobs" placeholder="footer_responsive_link_jobs">
+                        <span id="" data-uia="data-uia-footer-label">Jobs</span>
+                    </a>
+                </li>
+                <li class="footer-link-item" placeholder="footer_responsive_link_waysToWatch_item">
+                    <a class="footer-link" data-uia="footer-link" href="/watch" placeholder="footer_responsive_link_waysToWatch">
+                        <span id="" data-uia="data-uia-footer-label">Ways to Watch</span>
+                    </a>
+                </li>
+                <li class="footer-link-item" placeholder="footer_responsive_link_terms_item">
+                    <a class="footer-link" data-uia="footer-link" href="https://help.netflix.com/legal/termsofuse" placeholder="footer_responsive_link_terms">
+                        <span id="" data-uia="data-uia-footer-label">Terms of Use</span>
+                    </a>
+                </li>
+                <li class="footer-link-item" placeholder="footer_responsive_link_privacy_separate_link_item">
+                    <a class="footer-link" data-uia="footer-link" href="https://help.netflix.com/legal/privacy" placeholder="footer_responsive_link_privacy_separate_link">
+                        <span id="" data-uia="data-uia-footer-label">Privacy</span>
+                    </a>
+                </li>
+                <li class="footer-link-item" placeholder="footer_responsive_link_cookies_separate_link_item">
+                    <a class="footer-link" data-uia="footer-link" href="#" placeholder="footer_responsive_link_cookies_separate_link">
+                        <span id="" data-uia="data-uia-footer-label">Cookie Preferences</span>
+                    </a>
+                </li>
+                <li class="footer-link-item" placeholder="footer_responsive_link_corporate_information_item">
+                    <a class="footer-link" data-uia="footer-link" href="https://help.netflix.com/legal/corpinfo" placeholder="footer_responsive_link_corporate_information">
+                        <span id="" data-uia="data-uia-footer-label">Corporate Information</span>
+                    </a>
+                </li>
+                <li class="footer-link-item" placeholder="footer_responsive_link_contact_us_item">
+                    <a class="footer-link" data-uia="footer-link" href="https://help.netflix.com/contactus" placeholder="footer_responsive_link_contact_us">
+                        <span id="" data-uia="data-uia-footer-label">Contact Us</span>
+                    </a>
+                </li>
+                <li class="footer-link-item" placeholder="footer_responsive_link_speed_test_item">
+                    <a class="footer-link" data-uia="footer-link" href="https://fast.com" placeholder="footer_responsive_link_speed_test">
+                        <span id="" data-uia="data-uia-footer-label">Speed Test</span>
+                    </a>
+                </li>
+                <li class="footer-link-item" placeholder="footer_responsive_link_legal_notices_item">
+                    <a class="footer-link" data-uia="footer-link" href="https://help.netflix.com/legal/notices" placeholder="footer_responsive_link_legal_notices">
+                        <span id="" data-uia="data-uia-footer-label">Legal Notices</span>
+                    </a>
+                </li>
+                <li class="footer-link-item originals-link" placeholder="footer_responsive_link_only_on_netflix_item">
+                    <a class="footer-link" data-uia="footer-link" href="https://www.netflix.com/in/browse/genre/839338" placeholder="footer_responsive_link_only_on_netflix">
+                        <span id="" data-uia="data-uia-footer-label">Only on Netflix</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="lang-selection-container" id="lang-switcher">
+                <div data-uia="language-picker+container" class="ui-select-wrapper">
+                    <label for="lang-switcher-select" class="ui-label">
+                        <span class="ui-label-text">Select Language</span>
+                    </label>
+                    <div class="select-arrow medium prefix globe">
+                        <select data-uia="language-picker" class="ui-select medium" id="lang-switcher-select" tabindex="0" placeholder="lang-switcher">
+                            <option selected="" lang="en" value="/in/" data-language="en" data-country="IN">English</option>
+                            <option lang="hi" value="/in-hi/" data-language="hi" data-country="IN">हिन्दी</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <p class="footer-country">Netflix India</p></div>
+    </section>
+
+</body>
+</html>
